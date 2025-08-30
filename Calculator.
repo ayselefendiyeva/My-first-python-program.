@@ -1,0 +1,22 @@
+a = float(input("Enter your number:"))
+b = float(input("Enter your number:"))
+
+print("Please choose the operation you need.")
+print("+")
+print("-")
+print("×")
+print(":")
+
+choice = input("Your necessary operation.")
+
+if choice == "+":
+	print(f"{a} + {b} = {a + b}")
+elif choice == "-":
+	print(f"{a} - {b} = {a - b}")
+elif choice == "×":
+	print(f"{a} × {b} = {a * b}")
+elif choice == ":":
+ if b != 0:
+    print(f"{a} : {b} = {a / b}")
+ else:
+    	print("Mistake. You can't divide on zero.")
